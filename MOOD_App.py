@@ -3,11 +3,13 @@ import gspread
 from datetime import datetime
 import pandas as pd
 import plotly.express as px
+import json
 from oauth2client.service_account import ServiceAccountCredentials
 
 # Google Sheets Setup
 scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
-creds = ServiceAccountCredentials.from_json_keyfile_name("creds.json", scope)
+creds_dict = json.loads(st.secrets["GOOGLE_CREDENTIALS"])
+creds = ServiceAccountCredentials.from_json_keyfile_dict(creds_dict, scope)
 client = gspread.authorize(creds)
 sheet = client.open("MoodLog").sheet1 
 
