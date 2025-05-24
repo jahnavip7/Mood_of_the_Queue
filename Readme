@@ -1,17 +1,35 @@
 # Mood of the Queue
 
-A quick internal tool to log and visualize the mood of the support ticket queue.
+A simple internal tool to track the emotional “vibe” of a support ticket queue throughout the day. Built with Streamlit, Google Sheets, and Plotly.
 
-## Features
 
-- Select mood with emojis
-- Optional notes
-- Appends data to Google Sheet
-- Visualizes daily mood trends using Plotly
+---
 
-## Run Locally
+## 🔧 Features
+
+- 😃 Log a mood using emojis
+- 📝 Add optional notes
+- 📤 Append to Google Sheet in real-time
+- 📈 View mood counts for today in a dynamic bar chart
+
+---
+
+## 🚀 Live App 
+
+🔗 [Streamlit App](<https://moodofthequeue-epjct6brhbezmgrwo4er3s.streamlit.app/>)  
+
+---
+
+## 📂 Google Sheet Link
+
+📄 [Mood Log Google Sheet (View-Only)](<https://docs.google.com/spreadsheets/d/1HuVuLxSiCZiKs5qOkQBxxd1X1vP9SBhdYvElF6_t01A/edit?gid=0#gid=0>)
+
+---
+
+## 📦 Project Structure
 
 ```bash
-pip install -r requirements.txt
-streamlit run mood_app.py
-```
+Mood_of_the_Queue/
+├── MOOD_App.py           # Streamlit application
+├── requirements.txt      # Python dependencies
+└── README.md            
